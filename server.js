@@ -14,4 +14,4 @@ app.listen(PORT, function() {
 });
 
 // Require the routes set in burger_controller.js
-require('./controllers/apps_controller.js')(app);
+require('./controllers/profiles_controller.js')(app);
