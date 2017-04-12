@@ -13,5 +13,10 @@ app.listen(PORT, function() {
   console.log('App running on port ' + PORT);
 });
 
-// Require the routes set in burger_controller.js
-require('./controllers/profiles_controller.js')(app);
+app.get('/', function(req, res) {
+    // Ship it up!
+    // res.sendFile(path.join(__dirname, '../public/index.html'));
+});
+
+// // Require the routes set in burger_controller.js
+// require('./controllers/profiles_controller.js')(app);
